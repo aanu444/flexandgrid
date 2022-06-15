@@ -1,0 +1,144 @@
+/*Font Links*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*,::before, ::after{
+    box-sizing:border-box;
+}
+
+/* Primary */
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+/*neutral text colours*/
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+/*Background, Headings and Buttons */
+$veryLightGrey: hsl(0, 0%, 95%);
+
+/*Typography*/
+@mixin fonts-400{
+    font-weight:400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@mixin fonts-700{
+    font-weight:700;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+body{
+    font-size:15px;
+    background-color:$veryLightGrey;
+
+    a{
+        text-decoration:none;
+        @include fonts-400();
+        display:block;
+        text-align:center;
+        margin-top:20px;
+    }
+}
+
+div{
+    border:0px solid #000;
+}
+
+
+.flex-container{
+    display:flex;
+    flex-flow:row nowrap;
+    height:100vh;
+
+    .car-container{
+        flex-basis:70%;
+        margin:0 auto;
+        height:70vh;
+        display:flex;
+        flex-flow:row nowrap;
+        margin-top:80px;
+        border-radius:20px;
+        
+
+        .cars{
+            flex-basis:33.33%;
+
+            img {
+                    display: block;
+                    margin-left: 30px;
+                    margin-top: 40px;
+                }
+
+            h1{
+                margin-left:30px;
+                color:$transparentWhite;
+                @include fonts-700();
+            }
+
+            p{
+                margin-left:30px;
+                color:$transparentWhite;
+                @include fonts-400();
+            }
+
+            button{
+                margin-top:30px;
+                padding:10px;
+                border-radius:50px;
+                background-color:$veryLightGrey;
+                width:50%;
+                margin-left:30px;
+                border:1px solid $veryLightGrey;
+                @include fonts-400();
+            }
+
+        }
+
+        .sedans{
+            border-top-left-radius:20px;
+            border-bottom-left-radius:20px;
+            background-color: $brightOrange;
+            
+            button{
+                color:$brightOrange; 
+
+        }
+
+                   button:hover {
+                       background-color: transparent;
+                       color: $transparentWhite;
+                   }
+        }
+
+        .suvs{
+            background-color:$darkCyan;
+
+            button{
+                color:$darkCyan;
+            }
+
+                        button:hover {
+                            background-color: transparent;
+                            color: $transparentWhite;
+                        }
+        }
+
+        .luxury{
+            border-top-right-radius:20px;
+            border-bottom-right-radius:20px;
+            background-color: $veryDarkCyan;
+
+            button{
+                color:$veryDarkCyan;
+            }
+
+                        button:hover {
+                            background-color: transparent;
+                            color: $transparentWhite;
+                        }
+        }
+    }
+}
+
+
+

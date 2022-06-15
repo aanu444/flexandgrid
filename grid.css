@@ -1,0 +1,64 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #050832;
+  font-size: 15px;
+}
+
+body a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+div {
+  border: 0px solid #000;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 10px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.grid-container .grid-item {
+  min-height: 120px;
+}
+
+.grid-container .one {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #e33710;
+}
+
+.grid-container .two {
+  background-color: #e39610;
+}
+
+.grid-container .three {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: #37a416;
+}
+
+.grid-container .four, .grid-container .five {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: #0fcdd0;
+}
+/*# sourceMappingURL=grid.css.map */
