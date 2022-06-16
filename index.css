@@ -134,4 +134,55 @@ div {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.75);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .flex-container .car-container {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    height: 50vh;
+  }
+  .flex-container .car-container .cars img {
+    width: 40%;
+    margin-left: 10px;
+  }
+  .flex-container .car-container .cars h1 {
+    font-size: 0.65rem;
+    margin-left: 10px;
+  }
+  .flex-container .car-container .cars p {
+    font-size: 0.55rem;
+    margin-left: 10px;
+  }
+  .flex-container .car-container .cars button {
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 0.35rem;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 1440px) {
+  .flex-container {
+    margin-top: 80px;
+  }
+  .flex-container .car-container {
+    height: 50vh;
+  }
+  .flex-container .car-container .cars img {
+    margin-left: 50px;
+  }
+  .flex-container .car-container .cars h1 {
+    font-size: 2rem;
+    margin-left: 50px;
+  }
+  .flex-container .car-container .cars p {
+    font-size: 1.55rem;
+    margin-left: 50px;
+  }
+  .flex-container .car-container .cars button {
+    font-size: 1.55rem;
+    margin-left: 50px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
