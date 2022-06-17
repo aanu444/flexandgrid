@@ -53,7 +53,7 @@ div{
     .car-container{
         flex-basis:70%;
         margin:0 auto;
-        height:70vh;
+        height:70vh; 
         display:flex;
         flex-flow:row nowrap;
         margin-top:80px;
@@ -140,11 +140,13 @@ div{
     }
 }
 
+
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .flex-container{
         .car-container{
-            flex-basis:90%;
-            height:50vh;
+            flex-basis:95%;
+            height:40vh;
             .cars{
                 img{
                     width:40%;
@@ -152,12 +154,12 @@ div{
                 }
 
                 h1{
-                    font-size:0.65rem;
+                    font-size:0.55rem;
                     margin-left:10px;
                 }
 
                 p{
-                    font-size:0.55rem;
+                    font-size:0.35rem;
                     margin-left:10px;
                 }
 
@@ -173,34 +175,103 @@ div{
     }
 }
 
-@media only screen and (min-device-width: 1440px){
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
     .flex-container {
-        margin-top:80px;
             .car-container {
-                height: 50vh;
+                flex-basis: 85%;
+                height: 60vh;
     
                 .cars {
                     img {
-                        margin-left: 50px;
+                        width: 30%;
+                        margin-left: 10px;
                     }
     
                     h1 {
-                        font-size: 2rem;
-                        margin-left: 50px;
+                        font-size: 1.5rem;
+                        margin-left: 10px;
                     }
     
                     p {
-                        font-size: 1.55rem;
-                        margin-left: 50px;
+                        font-size: 0.75rem;
+                        margin-left: 10px;
                     }
     
                     button {
-                        font-size: 1.55rem;
-                        margin-left: 50px;
+                        padding: 10px;
+                        border-radius: 20px;
+                        font-size: 0.55rem;
+                        margin-top: 10px;
+                        margin-left: 10px;
                     }
                 }
             }
         }
 }
 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1035px){
+    .flex-container {
+            .car-container {
+                flex-basis: 85%;
+                height: 60vh;
+    
+                .cars {
+                    img {
+                        width: 30%;
+                        margin-left: 30px;
+                    }
+    
+                    h1 {
+                        font-size: 2rem;
+                        margin-left: 30px;
+                    }
+    
+                    p {
+                        font-size: 0.95rem;
+                        margin-left: 30px;
+                    }
+    
+                    button {
+                        padding: 10px;
+                        border-radius: 20px;
+                        font-size: 0.75rem;
+                        margin-top: 10px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+}
+
+@media only screen and (min-device-width: 1440px) {
+    .flex-container {
+        margin-top: 80px;
+
+        .car-container {
+            flex-basis:95%;
+            height: 60vh;
+
+            .cars {
+                img {
+                    margin-left: 50px;
+                }
+
+                h1 {
+                    font-size: 2rem;
+                    margin-left: 50px;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    margin-left: 50px;
+                }
+
+                button {
+                    font-size: 1.55rem;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+}
 
